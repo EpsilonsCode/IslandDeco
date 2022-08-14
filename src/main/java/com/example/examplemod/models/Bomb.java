@@ -13,12 +13,12 @@ import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 
-public class Bomb_model<T extends Entity> extends EntityModel<T> {
+public class Bomb<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("modid", "custom_model"), "main");
-	public final ModelPart bomb;
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("modid", "bomb"), "main");
+	private final ModelPart bomb;
 
-	public Bomb_model(ModelPart root) {
+	public Bomb(ModelPart root) {
 		this.bomb = root.getChild("bomb");
 	}
 

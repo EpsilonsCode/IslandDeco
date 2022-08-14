@@ -1,0 +1,5 @@
+public VoxelShape makeShape(){
+	VoxelShape shape = VoxelShapes.empty();
+
+	return shape;
+}
