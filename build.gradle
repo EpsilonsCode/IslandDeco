@@ -19,9 +19,9 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 
-version = '1.0'
-group = 'com.yourname.modid' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'modid'
+version = '1.1'
+group = 'com.omicron.island_deco' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'island_deco'
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -141,7 +141,7 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-    jcenter()
+    // jcenter()
     // Put repositories for dependencies here
     // ForgeGradle automatically adds the Forge maven and Maven Central for you
 
@@ -168,12 +168,12 @@ dependencies {
     //api 'org.apache.commons:commons-math3:3.6.1'
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
-    implementation 'com.google.guava:guava:22.0'
+    // implementation 'com.google.guava:guava:22.0'
 
     // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
+    // testImplementation 'junit:junit:4.12'
 
-    implementation 'org.mariadb.jdbc:mariadb-java-client:2.1.2'
+    // implementation 'org.mariadb.jdbc:mariadb-java-client:2.1.2'
     // For more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
